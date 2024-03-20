@@ -1,0 +1,138 @@
+4.C:\Users\PC\OneDrive\Desktop>mkdir SI_2024_Lab1_223103
+  C:\Users\PC\OneDrive\Desktop>cd SI_2024_Lab1_223103
+  C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git init
+
+5.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git remote add origin https://github.com/JasnaJovanova/SI_2024_lab1_223103.git
+
+6.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>notepad README.md
+  C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git add .
+  C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git commit -m "Initial commit"
+ [master (root-commit) 95f111b] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+7.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git add .
+  C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git commit -m "Add starter code"
+ [master 965619f] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+8.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git push origin master
+  Enumerating objects: 8, done.
+  Counting objects: 100% (8/8), done.
+  Delta compression using up to 8 threads
+  Compressing objects: 100% (6/6), done.
+  Writing objects: 100% (8/8), 1.12 KiB | 287.00 KiB/s, done.
+  Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+  To https://github.com/JasnaJovanova/SI_2024_lab1_223103.git
+ * [new branch]      master -> master
+
+9.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git branch bug1
+  C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git branch bug2
+
+10.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git checkout bug1
+  Switched to branch 'bug1'
+
+11.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git add .
+   warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+   C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git commit -m "Fix wrong condition in filterOddLengthStrings"
+[bug1 79eabea] Fix wrong condition in filterOddLengthStrings
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git checkout bug2
+   Switched to branch 'bug2'
+
+13.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git add .
+   warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+   C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git commit -m "Fix wrong condition in makeBigStringFrom"
+   [bug2 4601ea0] Fix wrong condition in makeBigStringFrom
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git checkout bug1
+   Switched to branch 'bug1'
+
+15.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git add .
+   warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+   C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git commit -m "Call method filterOddLengthStrings in main class"
+  [bug1 5bc9673] Call method filterOddLengthStrings in main class
+ 1 file changed, 1 insertion(+)
+
+16.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git checkout bug2
+   Switched to branch 'bug2'
+
+17.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git add .
+   C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git commit -m "Call method makeBigStringFrom in main class"
+   [bug2 569e53f] Call method makeBigStringFrom in main class
+ 1 file changed, 1 insertion(+)
+
+18.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git push --all
+ Enumerating objects: 16, done.
+ Counting objects: 100% (16/16), done.
+ Delta compression using up to 8 threads
+ Compressing objects: 100% (12/12), done.
+ Writing objects: 100% (12/12), 1.24 KiB | 423.00 KiB/s, done.
+ Total 12 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+ remote: Resolving deltas: 100% (8/8), completed with 4 local objects.
+ To https://github.com/JasnaJovanova/SI_2024_lab1_223103.git
+ * [new branch]      bug1 -> bug1
+ * [new branch]      bug2 -> bug2
+
+19.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git checkout master
+  Switched to branch 'master'
+
+20.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git merge bug1
+   Updating 965619f..5bc9673
+   Fast-forward
+   SILab1Main.java | 1 +
+   SILab1_1.java   | 2 +-
+   2 files changed, 2 insertions(+), 1 deletion(-)
+Нема конфликт.
+
+21.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git push --all
+   Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/JasnaJovanova/SI_2024_lab1_223103.git
+   965619f..5bc9673  master -> master
+
+22.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git checkout bug2 
+   Switched to branch 'bug2'
+
+23.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git rebase master
+    Auto-merging SILab1Main.java
+    CONFLICT (content): Merge conflict in SILab1Main.java
+    error: could not apply 569e53f... Call method makeBigStringFrom in main class
+    hint: Resolve all conflicts manually, mark them as resolved with
+    hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+    hint: You can instead skip this commit: run "git rebase --skip".
+    hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+    Could not apply 569e53f... Call method makeBigStringFrom in main class
+Тука се појави конфликт, затоа избришав <<<< HEAD >>>>> и го зачував повторно.
+
+    C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git add .
+
+    C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git rebase --continue
+    [detached HEAD 5d9488a] Call method makeBigStringFrom in main class
+    1 file changed, 3 insertions(+)
+    Successfully rebased and updated refs/heads/bug2.
+На тој начин се разреши конфликтот.
+
+24.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git checkout master
+   Switched to branch 'master'
+
+25.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git merge bug2
+   Updating 5bc9673..5d9488a
+   Fast-forward
+     SILab1Main.java | 3 +++
+     SILab1_2.java   | 2 +-
+     2 files changed, 4 insertions(+), 1 deletion(-)
+Нема конфликт при извршување на командата.
+
+26/27.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>git push --all --force
+      Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+      To https://github.com/JasnaJovanova/SI_2024_lab1_223103.git
+      + 569e53f...5d9488a bug2 -> bug2 (forced update)
+
+28.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>notepad logs.txt
+
+29.C:\Users\PC\OneDrive\Desktop\SI_2024_Lab1_223103>notepad 223103.txt

@@ -1,0 +1,40 @@
+PC@DESKTOP-OGAUDG3 MINGW64 ~
+$ cd /c/Users/PC/OneDrive/Desktop/SI_2024_Lab1_223103
+
+PC@DESKTOP-OGAUDG3 MINGW64 ~/OneDrive/Desktop/SI_2024_Lab1_223103 (master)
+$ git log
+commit 5d9488af939e93088847d5509365bad12a57abe6 (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: JasnaJovanova <jasna7jovanova@gmail.com>
+Date:   Wed Mar 20 19:36:53 2024 +0100
+
+    Call method makeBigStringFrom in main class
+
+commit 449a5ff06fbe2fad6554f648802c76126fa607fd
+Author: JasnaJovanova <jasna7jovanova@gmail.com>
+Date:   Wed Mar 20 19:30:49 2024 +0100
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 5bc96738e12ea64cff944b48764183ec29b4b026 (origin/bug1, bug1)
+Author: JasnaJovanova <jasna7jovanova@gmail.com>
+Date:   Wed Mar 20 19:34:16 2024 +0100
+
+    Call method filterOddLengthStrings in main class
+
+commit 79eabea78c991922c7bffb0f503e5fde252bfd38
+Author: JasnaJovanova <jasna7jovanova@gmail.com>
+Date:   Wed Mar 20 19:27:58 2024 +0100
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 965619fda562e93e148aff31b2095cdc3a900081
+Author: JasnaJovanova <jasna7jovanova@gmail.com>
+Date:   Wed Mar 20 19:23:19 2024 +0100
+
+    Add starter code
+
+commit 95f111b99fbeb2d940e0f05f305cb860a5d25009
+Author: JasnaJovanova <jasna7jovanova@gmail.com>
+Date:   Wed Mar 20 19:22:13 2024 +0100
+
+    Initial commit
